@@ -16,7 +16,7 @@ const server = http.createServer(app);
 // 3. INITIALIZE SOCKET.IO WITH CORS  <--- CHANGED
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173', // Your frontend URL
+    origin: 'http://localhost:5173', 'https://voting-frontend-fawn.vercel.app/',
     methods: ["GET", "POST"],
     credentials: true
   }
